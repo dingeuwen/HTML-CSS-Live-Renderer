@@ -84,13 +84,6 @@ div#result {
   width:100%;
   height: 100%;
 }
-#wrapper .checkbox label{
-  width:auto;
-}
-
-#wrapper .checkbox {
-  padding:5px 10px;
-}
 
 #toggle {
   font-size:10px;
