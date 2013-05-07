@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HTML & CSS Live Editor</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="style.css" media="all" rel="stylesheet" type="text/css"></link>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <style type="text/css"></style>
+
+</head>
+
+<body>
+<div id="page" data-role="page">
+        <!-- <a href="javascript:cssToggle()" id="toggle">x</a> -->
+        <div id="wrapper">
+            <!-- <label for="htmloutput"><a class="active" href="javascript:htmlToggle()" id="togglehtml"><button>HTML</button></a></label>
+            <label for="cssoutput"><a href="javascript:cssToggle2()" id="togglecss"><button>CSS</button></a></label> -->
+            <div class="input htmloutput">
+                <label for="htmloutput"><button>HTML</button></label>
+                <textarea id="htmloutput"></textarea>
+            </div>
+            <div class="output css cssoutput">
+                <label for="cssoutput"><button>CSS</button></label>
+                <textarea id="cssoutput"></textarea>
+                <!-- <div id="link"></div> -->
+            </div>
+        </div>
+        <div id="result" class="output rendered"></div>
+
+    </div>
+</div>
+<input type="button" id="btnconvert" value="convert" style="display:none;" />
+</body>
+</html>
