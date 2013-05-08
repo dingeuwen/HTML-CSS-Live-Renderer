@@ -6,15 +6,7 @@ var myTimer;
 var header = Array();
 var css = Array();
 
-header["default"] = '<html>\n'+
-                    '<head>\n'+
-                    '   <title>HTML & CSS Live editor</title>\n'+
-                    '</head>\n'+
-                    '<body>\n'+
-                    '   <div id="header">HTML & CSS Live editor</div>\n'+
-                    '   <div id="content"><p>Play with HTML and CSS ...</p></div>\n'+
-                    '</body>\n'+
-                    '</html>\n';
+header["default"] = "<html><head><title>HTML & CSS Live editor</title></head><body><div id='header'>HTML & CSS Live editor</div><div id='content'><p>Play with HTML and CSS ...</p></div></body></html>";
 css["default"] =    'body,html {\n'+
                     '   background:0;\n'+
                     '   font-family:Verdana,Arial,sans;\n'+
@@ -73,8 +65,8 @@ function renderHTML()
                 replace(/html\{/g, "#result{");
 
     $("head style").text(fcss);
-    var cont = htmlStr.split("<body>")[1].split("</body>")[0].replace(/\$\.post/gi,'\\$\\.post').replace(/\$\.put/gi,'\\$\\.put').replace(/\$\.delete/gi,'\\$\\.delete').replace(/\$\.ajax/gi,'\\$\\.ajax');
-    var tit = htmlStr.split("<title>")[1].split("</title>")[0];
+    var cont = htmlStr;.split("<body>")[1].split("</body>")[0].replace(/\$\.post/gi,'\\$\\.post').replace(/\$\.put/gi,'\\$\\.put').replace(/\$\.delete/gi,'\\$\\.delete').replace(/\$\.ajax/gi,'\\$\\.ajax');
+    var tit = htmlStr;.split("<title>")[1].split("</title>")[0];
 
     $result.html(cont);
     $("title").text(tit);
